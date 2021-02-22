@@ -12,7 +12,7 @@ you will find instractions to run the API, API base URL and postman collection
   - JWT_SECRET=<YOUR_SECRET>
   - ACCESS_KEY_ID=<YOUR_SECRET>
   - SECRET_ACCESS_KEY=<YOUR_SECRET>
-- edit `ormconfig.json` file to change the database connection options (you have to create a database)
+- edit `./src/index.ts` file to change the database connection options (you have to create a database), i am using connection string
 - run `npm install`
 - run `npm run dev` to start the server on dev environement on port `3000`
 - now you can send requests to the API, each API request must be prefixed with the API version:
@@ -32,3 +32,4 @@ you will find instractions to run the API, API base URL and postman collection
 - bcrypt, for password hashing
 
 <h2>Deployed API URL :</h2>
+https://omtimiza.herokuapp.com
