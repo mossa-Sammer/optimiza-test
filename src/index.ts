@@ -1,7 +1,9 @@
 require('dotenv').config();
+import path from 'path';
 import 'reflect-metadata';
 import { createConnection } from 'typeorm';
 import { User } from './entity/User';
+import { Product } from './entity/Product';
 
 import express from 'express';
 import cookieParser from 'cookie-parser';
@@ -19,7 +21,14 @@ app.use(cookieParser());
 app.use(logger('dev'));
 
 const port = process.env.PORT || 5000;
-createConnection()
+createConnection({
+  type: 'postgres',
+  url: process.env.CLEARDB_DATABASE_URL,
+  logging: true,
+  synchronize: true,
+  migrations: [path.join(__dirname, './migrations/*')],
+  entities: [Product, User],
+})
   .then(async connection => {
     console.log('db connected!!!!');
 
