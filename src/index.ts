@@ -22,7 +22,7 @@ app.use(logger('dev'));
 
 const port = process.env.PORT || 5000;
 createConnection({
-  type: 'postgres',
+  type: 'mysql',
   url: process.env.CLEARDB_DATABASE_URL,
   logging: true,
   synchronize: true,
