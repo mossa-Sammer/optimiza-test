@@ -9,4 +9,4 @@ export const s3 = new AWS.S3({
 
 export const bucketName = 'imagestore1ps';
 
-export const imagePrefix = `https://${bucketName}.s3.eu-west-3.amazonaws.com/`;
+export const imagePrefix = `https://${bucketName}.s3.eu-west-3.amazonaws.com`;
