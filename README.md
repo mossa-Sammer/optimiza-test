@@ -1,4 +1,3 @@
-# optimiza-test
 
 Node-Typescript-API
 
@@ -31,5 +30,3 @@ you will find instractions to run the API, API base URL and postman collection
 - JWT, Authorization
 - bcrypt, for password hashing
 
-<h2>Deployed API URL :</h2>
-https://omtimiza.herokuapp.com
